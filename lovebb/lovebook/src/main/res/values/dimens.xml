@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- 那几个XView的dimen-->
+    <dimen name="x_header_height">60dp</dimen>
+    <dimen name="x_footer_height">90dp</dimen>
+    <dimen name="x_footer_padding">10dp</dimen>
+</resources>

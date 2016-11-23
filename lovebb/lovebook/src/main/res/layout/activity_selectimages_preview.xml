@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_selectimages_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.twkj.lovebook.selectimages.PreviewActivity">
+    <RelativeLayout
+        android:id="@+id/activity_selectimages_preview_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/UIbackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <ImageView
+            android:id="@+id/activity_selectimages_preview_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            android:background="@drawable/image_icon_back_background"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+    <com.twkj.lovebook.selectimages.HackyViewPager
+        android:id="@+id/activity_selectimages_preview_viewpager"
+        android:layout_toRightOf="@id/activity_selectimages_preview_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</RelativeLayout>

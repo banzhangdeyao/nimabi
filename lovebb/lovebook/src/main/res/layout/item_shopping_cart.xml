@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/item_shopping_cart_iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_shoppingcart_unpress"
+            android:padding="5dp"
+            />
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/item_shopping_cart_iv_covers"
+        android:layout_width="69dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:paddingLeft="3dp"
+        android:paddingRight="8dp"
+        android:layout_gravity="center_vertical"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/item_shopping_cart_tv_bookName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_marginRight="60dp"
+                    android:textColor="@color/text_gray"
+                    android:textSize="16sp"
+
+                    />
+                <TextView
+                    android:id="@+id/item_shopping_cart_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:textColor="@color/appStyle"
+                    android:textSize="14sp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/item_shopping_cart_tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:maxLines="2"
+                android:ellipsize="end"
+
+                android:layout_marginRight="60dp"
+                android:paddingBottom="5dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_address"
+                    />
+                <TextView
+                    android:id="@+id/item_shopping_cart_tv_contacterAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="60dp"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/item_shopping_cart_tv_jianhao"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@color/text_gray"
+                    android:textColor="@color/white"
+                    android:text="-"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/item_shopping_cart_tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/text_gray"
+
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/item_shopping_cart_tv_jiahao"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@color/appStyle"
+                    android:textColor="@color/white"
+                    android:text="+"
+                    android:gravity="center"
+
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+

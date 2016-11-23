@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:id="@+id/item_bookshelf_draft_book_iv_covers"
+                android:layout_width="80dp"
+                android:layout_height="84dp"
+                android:scaleType="fitXY"
+                />
+            <ImageView
+                android:id="@+id/item_bookshelf_draft_book_iv_delete"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_sticker_delete"/>
+            <TextView
+                android:id="@+id/item_bookshelf_draft_book_tv_percent"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="0%"
+                android:background="#70eeeeee"
+                android:layout_gravity="bottom"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_bookshelf_draft_book_tv_bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp"
+            android:lines="1"
+            android:ellipsize="end"
+            />
+    </LinearLayout>
+</LinearLayout>

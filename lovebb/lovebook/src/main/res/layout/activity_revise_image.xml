@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_revise_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.twkj.lovebook.activity.ReviseImageActivity">
+    <RelativeLayout
+        android:id="@+id/activity_revise_image_rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/activity_revise_image_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#171717"
+    android:layout_alignParentLeft="true"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <ImageView
+        android:id="@+id/activity_revise_image_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_back"
+        android:background="@drawable/image_icon_back_background"
+        android:padding="10dp"
+        />
+    <RadioGroup
+        android:id="@+id/activity_revise_image_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <RadioButton
+        android:id="@+id/activity_revise_image_rb_tuya"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableLeft="@drawable/selector_editor_background"
+        android:gravity="center"/>
+    <RadioButton
+        android:id="@+id/activity_revise_image_rb_texiao"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableLeft="@drawable/selector_editor_background"
+        android:gravity="center"/>
+    </RadioGroup>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_revise_image_rv_texiao"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        ></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_revise_image_rv_tiezhi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        ></android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        >
+        <LinearLayout
+            android:id="@+id/activity_revise_image_ll_lum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 亮  度 "
+            />
+        <SeekBar
+            android:id="@+id/activity_revise_image_sb_lum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_revise_image_ll_saturation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="饱和度"
+                />
+            <SeekBar
+                android:id="@+id/activity_revise_image_sb_saturation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_revise_image_ll_hum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 色  相 "
+                />
+            <SeekBar
+                android:id="@+id/activity_revise_image_sb_hum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#171717"
+            android:gravity="center_horizontal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+      <CheckBox
+          android:id="@+id/activity_revise_image_cb_lum"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:button="@null"
+          android:text="亮度"
+          android:textColor="@drawable/revise_checkbox_textcolor"
+          android:background="@drawable/revise_checkbox_background"
+
+
+          />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+        <CheckBox
+            android:id="@+id/activity_revise_image_cb_saturation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="饱和度"
+
+            android:textColor="@drawable/revise_checkbox_textcolor"
+            android:background="@drawable/revise_checkbox_background"
+            />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+        <CheckBox
+            android:id="@+id/activity_revise_image_cb_hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="色相"
+
+            android:textColor="@drawable/revise_checkbox_textcolor"
+            android:background="@drawable/revise_checkbox_background"
+            />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#171717"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+
+
+            >
+            <TextView
+                android:id="@+id/activity_revise_image_tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="保存"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/activity_revise_image_tv_adjust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="调节"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/activity_revise_image_tv_cut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="裁切"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

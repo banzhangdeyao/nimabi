@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pageViewBg">#c1c1c1</color>
+    <color name="white">#ffffff</color>
+    <color name="reviewTextColor">#171717</color>
+
+    <!-- APP整体风格颜色 -->
+    <color name="appStyle">#ef72a0</color>
+
+    <!-- 标题栏背景颜色 -->
+    <color name="TopBarBgColor">#7e7e7e</color>
+
+    <!--界面背景色-->
+    <color name="UIbackground">#171717</color>
+
+    <!-- icon 按下后变得颜色-->
+    <color name="iconPressed">#888888</color>
+
+    <!-- 文字颜色 -->
+    <!-- 文字灰 -->
+    <color name="text_gray">#a8a8a8</color>
+
+    <!-- 那几个XView的color -->
+    <color name="x_transparent">#00000000</color>
+    <color name="x_background">#F7F4F0</color>
+    <color name="x_title_color">#333333</color>
+</resources>

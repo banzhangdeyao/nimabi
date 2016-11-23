@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_selectimages_images"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.twkj.lovebook.selectimages.ImagesActivity">
+    <RelativeLayout
+        android:id="@+id/activity_selectimages_images_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/UIbackground"
+
+        >
+        <ImageView
+            android:id="@+id/activity_selectimages_images_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            android:padding="10dp"
+            android:background="@drawable/image_icon_back_background"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/activity_selectimages_images_tv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="列表"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/image_icon_back_background"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_selectimages_images_tv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预览"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/image_icon_back_background"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_selectimages_images_tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生成"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/image_icon_back_background"
+                android:padding="10dp"
+                android:layout_marginBottom="40dp"
+
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <GridView
+
+        android:id="@+id/activity_selectimages_images_gridview"
+        android:layout_toRightOf="@id/activity_selectimages_images_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp" />
+
+</RelativeLayout>

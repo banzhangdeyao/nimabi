@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/register_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="注册" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phone_image"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/phone_edit"
+            android:layout_width="170dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phone_text"
+            android:hint="请输入手机号"
+            android:textSize="13dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/yanzheng_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/yanzheng_text"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/yanzheng_image"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/yanzheng_edit"
+            android:layout_width="170dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/yanzheng_text"
+            android:hint="请输入验证码"
+            android:textSize="13dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/yanzheng_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/yanzheng_edit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="#334567"
+            android:text="获取验证码" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/pwd_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/pwd_text"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pwd_image"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="密  码" />
+
+        <EditText
+            android:id="@+id/pwd_edit"
+            android:layout_width="170dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pwd_text"
+            android:hint="至少6位数字"
+            android:textSize="13dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

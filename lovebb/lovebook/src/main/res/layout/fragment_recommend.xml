@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.twkj.lovebook.fragment.RecommendFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_recommend_banner_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="145dp"
+            android:gravity="center_vertical"
+            android:background="#66000000"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:text=""
+                android:textColor="#ffffff"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="9dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/fragment_recommend_banner_dot_indicator_one"
+                    android:src="@drawable/banner_dot_focused"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <ImageView
+                    android:id="@+id/fragment_recommend_banner_dot_indicator_two"
+                    android:src="@drawable/banner_dot_focused"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <ImageView
+                    android:id="@+id/fragment_recommend_banner_dot_indicator_three"
+                    android:src="@drawable/banner_dot_focused"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+                <!--
+
+                <ImageView
+                    android:id="@+id/fragment_recommend_banner_dot_indicator_four"
+                    android:src="@drawable/banner_dot_focused"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <ImageView
+                    android:id="@+id/fragment_recommend_banner_dot_indicator_five"
+                    android:src="@drawable/banner_dot_focused"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+                -->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_recommend_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
